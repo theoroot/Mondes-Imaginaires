@@ -16,4 +16,4 @@ Have fun !
 Vous trouverez aussi des fiches d'identités de votre planètes qui vous remplirez avec les caracteristiques de votre planètes et formes de vie. 
 
 # Petit precis de création de planètes 
-Bientôt disponibles, un guide en format pdf regroupant les connaissances de bases pour créer une planète scientifiquement plausible.
+Bientôt disponibles, un guide en format pdf regroupant les connaissances de base néccessaires à la création d'une planète scientifiquement plausible réussi.
