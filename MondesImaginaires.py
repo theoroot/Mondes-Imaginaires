@@ -81,7 +81,7 @@ class Ui_MainWindow(object):
         self.fond = QtWidgets.QLabel(self.centralwidget)
         self.fond.setGeometry(QtCore.QRect(0, 0, 1920, 1080))
         self.fond.setObjectName("FOND")
-        self.fond.setPixmap(QtGui.QPixmap("fd.png"))
+        self.fond.setPixmap(QtGui.QPixmap("image\fd.png"))
         self.fond.setAlignment(Qt.AlignCenter)
         self.fond.setContentsMargins(0, 0, 0, 0)
 
@@ -171,7 +171,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
 
         self.CalculP = QtWidgets.QPushButton(self.gridLayoutWidget)
-        pixp=QPixmap("br.png")
+        pixp=QPixmap("image\br.png")
         iconp = QtGui.QIcon()
         iconp.addPixmap(pixp, QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.CalculP.setIcon(iconp)
@@ -257,7 +257,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.pushrandom = QtWidgets.QPushButton(self.gridLayoutWidget)
-        pixf=QPixmap("bf.png")
+        pixf=QPixmap("image\bf.png")
         iconf = QtGui.QIcon()
         iconf.addPixmap(pixf, QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushrandom.setIcon(iconf)
@@ -326,7 +326,7 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.label_5)
 
         self.Reinit = QtWidgets.QPushButton(self.gridLayoutWidget)
-        pixre=QPixmap("bre.png")
+        pixre=QPixmap("image\bre.png")
         iconf = QtGui.QIcon()
         iconf.addPixmap(pixre, QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.Reinit.setIcon(iconf)
@@ -355,7 +355,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Mondes Imagninaires"))
-        MainWindow.setWindowIcon(QIcon("LOGO.ico"))
+        MainWindow.setWindowIcon(QIcon("image\LOGO.ico"))
         self.label.setText(_translate("MainWindow", "PARAMETRES"))
         self.label_2.setText(_translate("MainWindow", "     "+"RAYON EN Km"))
         self.label_6.setText(_translate("MainWindow", "     "+"MASSE EN kg (x10"+chr(0x00B2)+chr(0x2070)+")"))
@@ -368,7 +368,7 @@ class Ui_MainWindow(object):
         #Image du système
 
         self.Systeme.setText(_translate("MainWindow", " "))
-        self.pixmapsys=QPixmap("Sys.png")
+        self.pixmapsys=QPixmap("image\Sys.png")
         self.Systeme.setPixmap(self.pixmapsys)
 
         self.planeterandom.setText(_translate("MainWindow", "Fiona vous a forcé à choisir la planète N°X."))
