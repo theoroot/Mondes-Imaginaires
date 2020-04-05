@@ -13,7 +13,7 @@ Fiona vous assitera la création de votre planète en faisant :
 Have fun ! 
 
 # Fiches mondes imaginaires
-Vous trouverez aussi des fiches d'identités de votre planètes qui vous remplirez avec les caracteristiques de votre planètes et formes de vie. 
+Vous trouverez aussi des fiches d'identités de votre planètes que vous remplirez avec ses caracteristiques et celles de ses formes de vie. 
 
 # Petit precis de création de planètes 
-Bientôt disponibles, un guide en format pdf regroupant les connaissances de base néccessaires à la création d'une planète scientifiquement plausible réussi.
+Bientôt disponible, un guide en format pdf regroupant les connaissances de base néccessaires à la création d'une planète scientifiquement plausible réussi.
