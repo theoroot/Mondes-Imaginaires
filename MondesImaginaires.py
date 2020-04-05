@@ -30,13 +30,14 @@ class Ui_MainWindow(object):
         
     def revolution (self) :
         m=(10**20)*self.MasseLab.value()
+        ms=7.9564e29
         print(str(self.DistEP.text()))
         if m==0 or str(self.DistEP.text())=='Non renseigné': 
            self.Prev.setText("Vous n'avez pas choisi votre planète. Quelle erreur...")
 
         else : 
             d=float(self.D)*1000
-            P=2*np.pi*np.sqrt((d**3)/((6.67e-11)*m))
+            P=2*np.pi*np.sqrt((d**3)/((6.67e-11)*(ms+m)))
             P=P/(3600*24)
             self.Prev.setText(str(round(P,1)) + ' jours')
 
@@ -81,7 +82,7 @@ class Ui_MainWindow(object):
         self.fond = QtWidgets.QLabel(self.centralwidget)
         self.fond.setGeometry(QtCore.QRect(0, 0, 1920, 1080))
         self.fond.setObjectName("FOND")
-        self.fond.setPixmap(QtGui.QPixmap("image\fd.png"))
+        self.fond.setPixmap(QtGui.QPixmap("fd.png"))
         self.fond.setAlignment(Qt.AlignCenter)
         self.fond.setContentsMargins(0, 0, 0, 0)
 
@@ -171,7 +172,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
 
         self.CalculP = QtWidgets.QPushButton(self.gridLayoutWidget)
-        pixp=QPixmap("image\br.png")
+        pixp=QPixmap("br.png")
         iconp = QtGui.QIcon()
         iconp.addPixmap(pixp, QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.CalculP.setIcon(iconp)
@@ -257,7 +258,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.pushrandom = QtWidgets.QPushButton(self.gridLayoutWidget)
-        pixf=QPixmap("image\bf.png")
+        pixf=QPixmap("bf.png")
         iconf = QtGui.QIcon()
         iconf.addPixmap(pixf, QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushrandom.setIcon(iconf)
@@ -326,7 +327,7 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.label_5)
 
         self.Reinit = QtWidgets.QPushButton(self.gridLayoutWidget)
-        pixre=QPixmap("image\bre.png")
+        pixre=QPixmap("bre.png")
         iconf = QtGui.QIcon()
         iconf.addPixmap(pixre, QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.Reinit.setIcon(iconf)
@@ -355,7 +356,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Mondes Imagninaires"))
-        MainWindow.setWindowIcon(QIcon("image\LOGO.ico"))
+        MainWindow.setWindowIcon(QIcon("LOGO.ico"))
         self.label.setText(_translate("MainWindow", "PARAMETRES"))
         self.label_2.setText(_translate("MainWindow", "     "+"RAYON EN Km"))
         self.label_6.setText(_translate("MainWindow", "     "+"MASSE EN kg (x10"+chr(0x00B2)+chr(0x2070)+")"))
@@ -368,7 +369,7 @@ class Ui_MainWindow(object):
         #Image du système
 
         self.Systeme.setText(_translate("MainWindow", " "))
-        self.pixmapsys=QPixmap("image\Sys.png")
+        self.pixmapsys=QPixmap("Sys.png")
         self.Systeme.setPixmap(self.pixmapsys)
 
         self.planeterandom.setText(_translate("MainWindow", "Fiona vous a forcé à choisir la planète N°X."))
