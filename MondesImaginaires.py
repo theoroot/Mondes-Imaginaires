@@ -16,6 +16,8 @@ import numpy as np
 import numpy.random as rdm
 import os
 import sys
+QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True) #enable highdpi scaling
+QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps, True) #use highdpi icon
 
 class Ui_MainWindow(object):
 
